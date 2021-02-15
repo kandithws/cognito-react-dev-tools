@@ -1,0 +1,56 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": ["prettier", "plugin:prettier/recommended"],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module",
+        "allowImportExportEverywhere": false,
+        "codeFrame": false
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "max-len": ["warn", { "code": 100 }],
+        "prefer-promise-reject-errors": ["off"],
+        "react/jsx-filename-extension": ["off"],
+        "react/prop-types": ["off"],
+        "no-var": "error",
+        "no-console": "warn",
+        "array-callback-return": "warn",
+        "complexity": ["off", 15],
+        "consistent-return": "error",
+        "default-case": "error",
+        "default-case-last": "error",
+        "no-eval": "error",
+        "no-return-await": "error",
+        "eol-last": ["error", "always"],
+        "padding-line-between-statements": [
+            "error",
+            { "blankLine": "always", "prev": "*", "next": "return" }
+        ],
+        "no-unreachable-loop": "error",
+        "no-loop-func": "error",
+        "no-multi-str": "error",
+        "no-nested-ternary": "off",
+        "no-duplicate-imports": "error",
+        "prefer-const": "error",
+        "prefer-template": "error",
+        "prefer-rest-params": "error",
+        "no-useless-rename": "error",
+        "quotes": ["error", "single"],
+        "jsx-quotes": ["error", "prefer-single"],
+        "semi": ["error", "always"],
+        "block-spacing": "error",
+        "linebreak-style": ["error", "unix"],
+        "arrow-parens": ["error", "always"],
+        "template-curly-spacing": ["error", "never"]    
+    }
+}
